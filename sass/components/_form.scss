@@ -1,7 +1,7 @@
 .form {
   width: 30%;
   margin: auto;
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: rgba(0, 0, 0, 0.15);
 
   // 1200px
@@ -20,28 +20,47 @@
   }
 
   &__heading {
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: inherit;
+    padding-bottom: 2.5rem;
   }
 
   &__group {
-    padding-bottom: 1.5rem;
+    padding: 2rem;
   }
 
   &__label {
     text-align: left;
     display: block;
-    padding: 1rem;
+    padding: 1.2rem;
+    width: 75%;
+    margin: auto;
+    transform: translateY(-4.5rem);
+    margin-top: -4.5rem;
+    transition: opacity 0.2s, transform 0.2s;
+    will-change: transform;
+
+    // 1200px
+    @media only screen and (max-width: 75em) {
+      width: 100%;
+    }
   }
 
   &__input {
     font-size: 1.6rem;
+    font-family: inherit;
     padding: 1rem;
     display: block;
-    width: 100%;
+    width: 75%;
+    margin: auto;
     border-radius: 0.5rem;
     border: 0.3rem solid transparent;
     box-shadow: inset -0.2rem -0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+
+    // 1200px
+    @media only screen and (max-width: 75em) {
+      width: 100%;
+    }
 
     &:focus {
       outline: none;
@@ -57,17 +76,23 @@
     }
   }
 
+  &__input:placeholder-shown + &__label {
+    opacity: 0; // hide labels when placeholder text is visible
+    visibility: hidden;
+    transform: translateY(0rem);
+  }
+
   &__submit {
     font-size: 1.8rem;
     text-transform: uppercase;
-    padding: 2rem 3rem;
-    margin-top: 3rem;
+    padding: 1.5rem 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
     border-radius: 0.5rem;
     border: 0.1rem solid var(--white);
-    color: var(--black);
+    color: inherit;
     background-color: var(--light-blue);
-    transition: color 0.3s, background-color 0.4s, transform 0.2s,
-      box-shadow 0.2s;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
     will-change: transform;
     position: relative;
     box-shadow: inset -0.3rem -0.3rem 0.2rem rgb(255 255 255 / 20%);
@@ -75,7 +100,6 @@
     &:hover,
     &:focus {
       transform: translateY(-0.4rem);
-      color: var(--white);
       background-color: var(--medium-blue);
       box-shadow: 0.5rem 0.5rem 1rem rgb(225 225 225 / 30%);
     }

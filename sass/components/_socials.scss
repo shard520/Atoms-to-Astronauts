@@ -8,7 +8,7 @@
   }
 
   &__link {
-    padding: 2rem;
+    padding: 1.5rem;
     text-decoration: none;
 
     &:focus {
@@ -24,5 +24,6 @@
   &__icon {
     height: 4rem;
     width: 4rem;
+    transition: filter 0.2s;
   }
 }

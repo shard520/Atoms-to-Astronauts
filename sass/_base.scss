@@ -2,13 +2,13 @@
   // COLOURS
   --black: #141414;
   --white: #f0f0f0;
-  --light-blue: #a9c5df;
-  --medium-blue: #719fca;
+  --light-blue: #7856ff;
+  --medium-blue: #8c70ff;
 
   // FONTS
-  --default-font: arial, sans-serif;
+  --default-font: 'Open Sans', sans-serif;
   --default-font-size: 1.6rem;
-  --default-font-weight: 400;
+  --default-font-weight: 300;
 }
 
 *,
@@ -41,25 +41,36 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('/img/bg/bg_1000w.webp');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url('/img/bg/bg_1000w.webp');
 
   @include background-respond(large) {
-    background-image: url('/img/bg/bg_3000w.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+      url('/img/bg/bg_3000w.webp');
   }
 
   @include background-respond(medium) {
-    background-image: url('/img/bg/bg_2000w.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+      url('/img/bg/bg_2000w.webp');
+  }
+
+  // 500px
+  @media only screen and (max-width: 31.25em) {
+    padding: 1.5rem;
   }
 }
 
 .no-webp body {
-  background-image: url('/img/bg/bg_1000w.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url('/img/bg/bg_1000w.jpg');
 
   @include background-respond(large) {
-    background-image: url('/img/bg/bg_3000w.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+      url('/img/bg/bg_3000w.jpg');
   }
 
   @include background-respond(medium) {
-    background-image: url('/img/bg/bg_2000w.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+      url('/img/bg/bg_2000w.jpg');
   }
 }
