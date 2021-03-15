@@ -1,0 +1,28 @@
+.socials {
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5remrem;
+  }
+
+  &__link {
+    padding: 2rem;
+    text-decoration: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover *,
+    &:focus-within {
+      filter: drop-shadow(0 0 1.5rem rgba(225, 225, 225, 0.6));
+    }
+  }
+
+  &__icon {
+    height: 4rem;
+    width: 4rem;
+  }
+}

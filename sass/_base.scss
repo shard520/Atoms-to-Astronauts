@@ -1,0 +1,65 @@
+:root {
+  // COLOURS
+  --black: #141414;
+  --white: #f0f0f0;
+  --light-blue: #a9c5df;
+  --medium-blue: #719fca;
+
+  // FONTS
+  --default-font: arial, sans-serif;
+  --default-font-size: 1.6rem;
+  --default-font-weight: 400;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+
+  //650px
+  @media only screen and (max-width: 40.625em) {
+    font-size: 50%; // 1rem = 8px
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #000;
+  font-family: var(--default-font);
+  font-size: var(--default-font-size);
+  font-weight: var(--default-font-weight);
+  color: var(--white);
+  padding: 2rem;
+  min-height: 100vh;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('/img/bg/bg_1000w.webp');
+
+  @include background-respond(large) {
+    background-image: url('/img/bg/bg_3000w.webp');
+  }
+
+  @include background-respond(medium) {
+    background-image: url('/img/bg/bg_2000w.webp');
+  }
+}
+
+.no-webp body {
+  background-image: url('/img/bg/bg_1000w.jpg');
+
+  @include background-respond(large) {
+    background-image: url('/img/bg/bg_3000w.jpg');
+  }
+
+  @include background-respond(medium) {
+    background-image: url('/img/bg/bg_2000w.jpg');
+  }
+}
