@@ -10,8 +10,8 @@
 :root {
   --black: #141414;
   --white: #f0f0f0;
-  --light-blue: #7856ff;
-  --medium-blue: #8c70ff;
+  --light-green: #31b99e;
+  --medium-green: #2ca58d;
   --default-font: "Open Sans", sans-serif;
   --default-font-size: 1.6rem;
   --default-font-weight: 300;
@@ -104,6 +104,7 @@ body {
 @media only screen and (max-width: 31.25em) {
   .tagline__text {
     font-size: 2.5rem;
+    padding: 1rem;
   }
 }
 
@@ -119,6 +120,7 @@ body {
 @media only screen and (max-width: 31.25em) {
   .launch-date__text {
     font-size: 2.5rem;
+    padding: 0;
   }
 }
 
@@ -188,7 +190,7 @@ body {
   filter: drop-shadow(0 0 1.5rem rgba(225, 225, 225, 0.7));
 }
 .form__input:focus:valid {
-  border: 0.3rem solid rgba(0, 250, 0, 0.3);
+  border: 0.3rem solid rgba(44, 165, 141, 0.3);
 }
 .form__input:focus:invalid {
   border: 0.3rem solid rgba(250, 0, 0, 0.3);
@@ -216,16 +218,16 @@ body {
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   border: 0.1rem solid var(--white);
-  color: inherit;
-  background-color: var(--light-blue);
+  color: var(--black);
+  background-color: var(--medium-green);
   transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
-  will-change: transform;
+  will-change: transform, background-color, box-shadow;
   position: relative;
   box-shadow: inset -0.3rem -0.3rem 0.2rem rgba(255, 255, 255, 0.2);
 }
 .form__submit:hover, .form__submit:focus {
   transform: translateY(-0.4rem);
-  background-color: var(--medium-blue);
+  background-color: var(--light-green);
   box-shadow: 0.5rem 0.5rem 1rem rgba(225, 225, 225, 0.3);
 }
 .form__submit:focus {
@@ -237,40 +239,23 @@ body {
 }
 
 .logo {
-  font-size: 8rem;
-  letter-spacing: 0.5rem;
-  text-transform: uppercase;
+  max-width: 60%;
+  margin: auto;
 }
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 62.5em) {
   .logo {
-    font-size: 6rem;
+    max-width: 100%;
+    padding: 0 2rem;
   }
 }
-@media only screen and (max-width: 31.25em) {
+@media only screen and (max-width: 40.625em) {
   .logo {
-    font-size: 5rem;
+    max-width: 80%;
+    padding: 0;
   }
 }
-.logo__word {
-  display: inline-block;
-}
-.logo__icon {
-  display: inline-block;
-  height: 6.5rem;
-  fill: var(--white);
-  position: relative;
-  top: 0.5rem;
-}
-@media only screen and (max-width: 75em) {
-  .logo__icon {
-    height: 5rem;
-  }
-}
-@media only screen and (max-width: 31.25em) {
-  .logo__icon {
-    height: 3.5rem;
-    top: 0;
-  }
+.logo__img {
+  width: 100%;
 }
 
 .socials__box {
@@ -278,7 +263,6 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 0.5remrem;
 }
 .socials__link {
   padding: 1.5rem;

@@ -68,7 +68,7 @@
     }
 
     &:focus:valid {
-      border: 0.3rem solid rgba(0, 250, 0, 0.3);
+      border: 0.3rem solid rgba(44, 165, 141, 0.3);
     }
 
     &:focus:invalid {
@@ -90,17 +90,17 @@
     margin-bottom: 1rem;
     border-radius: 0.5rem;
     border: 0.1rem solid var(--white);
-    color: inherit;
-    background-color: var(--light-blue);
+    color: var(--black);
+    background-color: var(--medium-green);
     transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
-    will-change: transform;
+    will-change: transform, background-color, box-shadow;
     position: relative;
     box-shadow: inset -0.3rem -0.3rem 0.2rem rgb(255 255 255 / 20%);
 
     &:hover,
     &:focus {
       transform: translateY(-0.4rem);
-      background-color: var(--medium-blue);
+      background-color: var(--light-green);
       box-shadow: 0.5rem 0.5rem 1rem rgb(225 225 225 / 30%);
     }
 
