@@ -2,7 +2,7 @@
 
 > This is a landing page for a forthcoming Shopify store for Atoms to Astronauts, who sell beautifully made, eco conscious gifts that celebrate the STEM fields.
 
-View the site at atomstoastronauts.com
+View the site at [atomstoastronauts.com](https://www.atomstoastronauts.com)
 
 ## Contents
 
