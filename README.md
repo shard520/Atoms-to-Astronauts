@@ -1,8 +1,6 @@
 # Atoms to Astronauts
 
-> This is a landing page for a forthcoming Shopify store for Atoms to Astronauts, who sell beautifully made, eco conscious gifts that celebrate the STEM fields.
-
-View the site at atomstoastronauts.com
+> This was a pre-launch landing page for Atoms to Astronauts, who sell beautifully made, eco conscious gifts that celebrate the STEM fields.
 
 ## Contents
 
