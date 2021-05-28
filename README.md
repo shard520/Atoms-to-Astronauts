@@ -1,12 +1,6 @@
 # Atoms to Astronauts
 
-<<<<<<< HEAD
 > This was a pre-launch landing page for Atoms to Astronauts, who sell beautifully made, eco conscious gifts that celebrate the STEM fields.
-=======
-
-
-
->>>>>>> 370c248380f61f2e1e6c7ba9de2df2e4e1fe3c05
 
 ## Contents
 
